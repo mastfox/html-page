@@ -7,6 +7,7 @@ body {
 	margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Domine:700&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
@@ -72,7 +73,6 @@ header {
 	width: 100%;
 	height:1040px;
 	background: white url("./images/header-background.jpg") 50% 50% no-repeat;
-	/*box-shadow: 3px 3px 1px rgba(0,0,0,.05);*/
 	padding: 15px 0 0;
 	margin-bottom: 40px;
 	position: relative;
@@ -86,8 +86,6 @@ header {
 	padding: 35px 15px 5px;
     margin-top: -15px; 
 }
-
-@import url('https://fonts.googleapis.com/css?family=Domine:700&display=swap');
 
 .logo-name {
 	font-family: 'Domine', serif;
@@ -141,8 +139,9 @@ nav li a:hover {
 	width: 40px;
 	height: 40px;
 	margin-left: 20px;
-	background: #EF5A42;
+	background: #fa5c65;
 	cursor: pointer;
+	margin-top: -10px;
 }
 
 .nav-toggle span {
@@ -221,7 +220,8 @@ main {
 
 .block-section-content {
 	padding-right: 30px;
-    margin: 5px 50px 5px 0
+    margin: 25px 50px 5px 0;
+    display: inline-block;
 }
 
 .block-section-tagline {
@@ -258,6 +258,7 @@ main {
 section.block-section {
 	display: inline-block;
 	width: 100%;
+	margin-bottom: 30px;
 }
 
 .block-section-wrapper {
@@ -326,6 +327,7 @@ footer.footer {
 }
 
 @media (max-width: 980px) {
+	
 	.nav-toggle {
 		display: block;
 	}
@@ -333,10 +335,14 @@ footer.footer {
 	header {
 		padding: 10px 0;
 		height:100%;
+		margin-bottom: 10px;
+		background: none;
 	}
 
-	.top-menu {
+	.top-menu, .top-tagline {
 		height:100%;
+		margin-right: 15px;
+    	margin-left: 15px;
 	}
 
 	.block-section-content {
@@ -350,6 +356,14 @@ footer.footer {
 
     .block-section-employees {
     	padding: 20px 40px 0 0;
+    }
+
+    .top-social-icons {
+    	display: none;
+    }
+
+    .footer-social-icons, .copywrite {
+    	text-align: center;
     }
 
 	#menu {
@@ -380,12 +394,3 @@ footer.footer {
 	}
 
 }
-
-@media (max-width: 480px) {
-
-	
-
-}
-/*.top-social-icons li {
-	display: inline-block;
-}*/
