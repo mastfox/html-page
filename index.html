@@ -6,10 +6,13 @@
 	<title>Landing page - Volodin Alexander</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
-		$('.nav-toggle').on('click', function(){
-			$('#menu').toggleClass('active');
-		});
+		$(document).ready(function(){
+			$('.nav-toggle').click(function(){
+				$('#menu').toggleClass('active');
+			});
+		})
 	</script>
 </head>
 <body>
